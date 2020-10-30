@@ -1,5 +1,7 @@
 package saldo_tabungan;
 
+import java.util.Locale;
+
 /**
  *
  * @author
@@ -14,7 +16,7 @@ public class PBO10119909Latihan19 {
         double saldo_awal = 2500000;
         for (double i = 1; i <= 6; i++) {
             saldo_awal += Math.floor(saldo_awal * 0.15);
-            System.out.printf("Saldo di bulan ke-%1$.0f Rp. %2$,.0f%n",i,saldo_awal);
+            System.out.printf(Locale.ITALY ,"Saldo di bulan ke-%1$.0f Rp. %2$,.0f%n",i,saldo_awal);
         }
     }
 }
